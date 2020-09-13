@@ -19,7 +19,11 @@ defmodule SeedUnits do
       [abbreviation: "pt", unit: "pint", standard: "U.S.", inserted_at: timestamp, updated_at: timestamp],
       [abbreviation: "qt", unit: "quart", standard: "U.S.", inserted_at: timestamp, updated_at: timestamp],
       [abbreviation: "gal", unit: "gallon", standard: "U.S.", inserted_at: timestamp, updated_at: timestamp],
-      [abbreviation: "lb", unit: "pound", standard: "U.S.", inserted_at: timestamp, updated_at: timestamp]
+      [abbreviation: "lb", unit: "pound", standard: "U.S.", inserted_at: timestamp, updated_at: timestamp],
+      [abbreviation: "l", unit: "liter", standard: "Metric", inserted_at: timestamp, updated_at: timestamp],
+      [abbreviation: "ml", unit: "milliliter", standard: "Metric", inserted_at: timestamp, updated_at: timestamp],
+      [abbreviation: "g", unit: "grams", standard: "Metric", inserted_at: timestamp, updated_at: timestamp],
+      [abbreviation: "kg", unit: "kilograms", standard: "Metric", inserted_at: timestamp, updated_at: timestamp],
     ]
 
     Repo.insert_all(Unit, units)
